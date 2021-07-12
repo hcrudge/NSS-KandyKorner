@@ -9,10 +9,16 @@ export const ApplicationViews = () => {
         <>
             {/* Render the locations list when http://localhost:3000/locations */}
             <LocationProvider>
-                <Route path="/">
+                <Route exact path="/locations">
                     <LocationList />
                 </Route>
             </LocationProvider>
+            {/* Render the locations list when http://localhost:3000/locations */}
+            {/* <LocationProvider>
+                <Route exact path="/locations">
+                    <LocationList />
+                </Route>
+            </LocationProvider> */}
        </>
     )
 }
